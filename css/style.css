@@ -1,0 +1,55 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ul{
+    
+}
+
+nav{
+    text-align: center;
+    background: #f85032;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #e73827, #f85032);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #e73827, #f85032); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+nav ul li{
+    display: inline-block;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+   color: aliceblue;
+   font-size: 16px;
+   padding: 14px;
+   left: 20px;
+   display: inline-block;
+   position: relative;
+   z-index: 1;
+}
+nav ul li a::before{
+    content: "" ;
+    width: 0%;
+    height:100%;
+    background-color: rgba(246, 244, 244, 0.293);
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+nav ul li:hover a::before{
+    width: 100%;
+    
+
+
+}
